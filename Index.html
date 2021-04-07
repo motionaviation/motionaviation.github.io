@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+   
+         <style>
+    /* CSS CARDS */
+header {
+    letter-spacing: 6px;
+    background: royalblue;
+    padding: 20px;
+    width: 100%;
+       }
+body{
+    font-family: tahoma;
+    text-align-last: center;
+             }
+h2 { font-size: 2em;
+    width: 100%
+    }    
+h3 { 
+    text-justify: center;
+             }
+             
+section { padding: 30px;
+          margin-bottom: 40px;
+        }             
+.container { display: flex;
+             justify-content: center;
+             flex-wrap: wrap;
+             }
+.card {
+      border: 1px solid #ccc;
+      background-color: ivory;
+      margin: 25px;
+      padding: 25px;    
+      box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.5);
+             }
+             
+
+header h1 { 
+      font-size: 3em;
+          }
+             }               
+.icons {
+        font-size: 8em;
+        padding: 25px; 
+             }             
+          
+button, .button {
+                background: lightblue;
+                border: 3;
+                color: black;
+                padding: 10px;
+                width: 40%;
+                margin-bottom: 10px;
+             }
+             
+.blue {
+    background: dodgerblue ;
+     }             
+     
+td{ 
+   padding: 10px;          
+             }             
+             
+table { 
+        margin: auto;
+             }
+             
+#my-order {
+ background-color: #29C1C4;
+ padding: 25px;
+ display: none;
+             }             
+             
+.footer {
+        padding: 30px;
+        background: lightcoral;
+             }  
+             
+.circle {
+        color: black;
+      font-size: 2.5em;
+      display: inline-block;
+     height: 40px;
+    width: 40px;
+    margin: 15px;
+    border-radius: 50%;
+    background: lightblue;
+    padding: 5px 10px 15px 10px;
+    font-family: helvetica;
+             } 
+@media screen and (min-width: 50em) { 
+      .card { 
+          flex-basis: 325px;
+            }
+    header h1 { 
+    font-size: 5em;
+          }
+             }         
+             
+        </style>                            
+  
+        <body>
+ <header>
+     <h1> Aviation Careers</h1>
+      <h4> Pilot, Air Traffic Controller, Airside Operations</h4>
+  </header>
+  <section>
+  <h2> Welcome</h2>
+    <br> <br> <br> 
+      
+   <section class="container" style="background-color: lightcoral">     
+ <article> <h2> Vision: </h2>
+       <p> To inform people of what carrers are possiable in
+    Aviation,not just Pilots and Air Traffic Controllers.</p>            
+     </article>
+     </section>
+       
+      <section class="container" style="background-color: lightgray">
+     <article>  <h2>  About Us: </h2>
+          <p> We want to be able to help people to have a
+          caerer they want in Aviation. </p>    
+      </article>   
+      </section>
+        
+         <section class="container" style="background-color: lightblue">
+        <article>  <h2> Our Team </h2>
+           <h3> Connor Sumner</h3>
+           <br>
+           <p> I want to work towards becaming a pilot with Air New Zealand. </p>
+            </article>
+            </section> 
+      
+      
+ <article class="card">
+        <div class="icons"> 
+            ✈
+         </div>
+     <h3> Pilot</h3>
+     
+     <p> A pilot is resposiable for flying the aircraft from point A to point B, and all of the passengers onboard.  </p>
+     <button> Learn More </button>          
+      </article>   
+ <article class="card"> 
+       <div class="icons"> 
+       🛰 </div> 
+    <h3> Air Traffic Controller </h3>       
+     <p> Air Traffic Controllers are resposiable for all aircraft within controlled airpace. They are resposiable for sepertating them, and previding an Air Traffic Service. </p>
+     <button> Learn More </button>
+      </article>         
+      
+    <section class="blue container">
+      <section>
+        <h2> MY AVIATION SURVEY: </h2>
+       <form id="my-form"> 
+          <table> 
+          <tr> 
+            <td> Name: </td>
+            <td> <input type="text" size="25" name="my=name"> </td>
+            </tr>
+          
+          <tr> 
+            <td> Address: </td>
+            <td> <input type="text" size="25" name="my-address"> </td>
+            </tr>
+        
+            <tr> 
+            <td> Favourite Aircraft: </td>
+            <td> <select name="my-plane">
+                <option>     </option>
+                <option> Airbus A320 </option>
+                <option> Boeing 787</option>
+                <option> Boeing 747-8 </option>
+                <option> Airbus A380 </option>
+                <option> Airbus A350 </option>
+                <option> Boeing 737 </option>
+                </select> </td>
+            </tr>
+          
+          <tr> 
+            <td> Favourite Airport: </td>
+            <td> <select name="my-airport"> 
+                <option>  </option>
+                <option> LAX </option>
+                <option> Heathrow </option>
+                <option> Sydney</option>
+                <option> Auckland </option>
+                <option> Cape Town </option></select> </td>
+               </tr>
+         
+           <tr> 
+              <br>
+              </tr>
+            
+              <tr> 
+            <td colspan="2"> 
+            <input class="button"
+            type="button"
+            value="Submit" onclick="placeOrder();">
+                <input class="button" 
+                type="reset" 
+                value="Clear">
+                </td>
+              </tr>
+           </table>
+            <br>
+          <div id="my-order">
+           </div>
+          </form>   
+               
+        </section>
+        
+      
+        </section>
+      <div class="footer"> <h3> Thanks For Visiting </h3> <div class="container">  
+          <article class="card"> 
+          <article> <h3> Get in Touch </h3> <p> Probably the best place in all of Auckland. </p> </article> 
+          <article> <h3> Contact Us:</h3> <p> We would love to hear from you.
+             <br> Call or Email Us. <br> 
+              Mobile 021324582 //
+              Tel: 095753265</p>  </article> </div>
+             <div class="circle">F</div>
+            <div class="circle">T</div>
+          <div class="circle">I</div>        
+          <br>
+          &copy;2021 Aviation Careers
+          </div> </div>
+      <script> 
+      function placeOrder () {
+      var orderForm = document.getElementById("my-form");
+      results = "<h3> Thanks for doing this survey</h3>";
+      results += "<br>Name: " + orderForm.elements["my-name"]. value;
+      results += "<br>City: " + orderForm.elements["my-city"] .value;
+      results += "<br>Favourite Aircraft: " + orderForm.elements["Favourite-Aircraft"] .value;
+      results += "<br>Favourite Airport: " + orderForm.elements["Favourite-Airport"] .value;
+      var orderResults = document.getElementById("my-order"); 
+      orderResults.style.display = "block";
+      orderResults.innerHTML = results;
+      }
+      </script>
+      </body>
+    </body> 
+   </head>
+</html>
